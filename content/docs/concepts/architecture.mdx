@@ -1,15 +1,15 @@
 ---
-title: 'Read-only regions'
-subtitle: 'Add additional read-only regions to your production database.'
+title: 'Architecture'
+subtitle: 'Learn about ScyllaDB and its design.'
 ---
 
-## Overview
+## What's ScyllaDB?
 
-With the PlanetScale Portals (beta), you can replicate your production database across the globe by creating read-only regions in any PlanetScale [region of availability](/docs/concepts/regions).
+ScyllaDB is a NoSQL database implemented in C++ for high performance computing. It was founded by the team who designed and developed the KVM hypervisor, the default hypervisor in many cloud computing environments, including Google Compute Engine, Amazone Web Services, and OpenStack.
 
-This feature supports globally distributed applications by enabling your database to perform low latency reads in the regions closest to your applications and users.
+ScyllaDB's distributed architecture allows it to scale horizontally and vertically, and is designed to be fault tolerant and highly available. 
 
-## How to create a read-only region
+## ScyllaDB Cluster
 
 1. In the [PlanetScale dashboard](https://app.planetscale.com), select the database you want to add a read-only region to.
 2. Click on the production branch.

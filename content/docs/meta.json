@@ -7,18 +7,14 @@
       "image": "/docs/img/internals/category_concepts_light.png",
       "pages": [
         {
-          "display": "Getting started with PlanetScale",
+          "display": "What's ScyllaDB",
           "subpages": [
-            { "route": "planetscale-workflow", "display": "PlanetScale workflow" },
-            { "route": "branching", "display": "Branching" },
-            { "route": "data-branching", "display": "Data Branching™" },
-            { "route": "nonblocking-schema-changes", "display": "Non-blocking schema changes" },
-            { "route": "deploy-requests", "display": "Deploy requests" },
-            { "route": "connection-strings", "display": "Connection strings" },
-            { "route": "regions", "display": "Regions" },
-            { "route": "read-only-regions", "display": "Read-only regions" },
-            { "route": "database-imports", "display": "Database imports" },
-            { "route": "database-sleeping", "display": "Database sleeping" }
+            { "route": "architecture", "display": "Architecture" },
+            { "route": "regions", "display": "Shard Awareness" },
+            { "route": "branching", "display": "Keyspace" },
+            { "route": "data-branching", "display": "Replication Factor" },
+            { "route": "deploy-requests", "display": "Consistency Level" },
+            { "route": "connection-strings", "display": "Change Data Capture" }
           ]
         },
         {
@@ -35,15 +31,7 @@
             { "route": "password-roles", "display": "Password roles" },
             { "route": "security-log", "display": "Security log" },
             { "route": "sso", "display": "Single sign-on" },
-            { "route": "teams", "display": "Teams" },
-            { "route": "secure-connections", "display": "Secure connections" },
-            { "route": "service-tokens", "display": "Service tokens" }
-          ]
-        },
-        {
-          "display": "Deployment",
-          "subpages": [
-            { "route": "deployment-options", "display": "Deployment options" }
+            { "route": "secure-connections", "display": "Secure connections" }
           ]
         },
         {
@@ -54,11 +42,19 @@
           ]
         },
         {
+          "display": "Event streaming",
+          "subpages": [
+            { "route": "audit-log", "display": "Change Data Capture" },
+            { "route": "audit-log", "display": "Kafka" },
+            { "route": "query-insights", "display": "Pulsar" }
+          ]
+        },
+        {
           "display": "CLI",
           "subpages": [
             {
               "route": "planetscale-environment-setup",
-              "display": "PlanetScale CLI environment set up"
+              "display": "CLI environment set up"
             }
           ]
         },
@@ -69,11 +65,11 @@
     },
     {
       "id": "tutorials",
-      "name": "Guides",
+      "name": "Getting Started",
       "description": "Learn the basics with our hands-on tutorials.",
       "image": "/docs/img/internals/category_tutorials_light.png",
       "pages": [
-        { "route": "planetscale-quick-start-guide", "display": "PlanetScale quickstart" },
+        { "route": "scylladb-quick-start-guide", "display": "ScyllaDB quickstart" },
         { "route": "connect-any-application", "display": "Connect any app" },
         {
           "route": "connect-django-app",
@@ -88,112 +84,19 @@
           "display": "Node.js"
         },
         {
-          "display": "Next.js",
-          "subpages": [
-            {
-              "route": "connect-nextjs-app",
-              "display": "Next.js quickstart"
-            },
-            {
-              "route": "nextjs-planetscale-netlify-template",
-              "display": "Next.js and Netlify Template"
-            },
-            {
-              "route": "deploy-to-netlify",
-              "display": "Deploy to Netlify"
-            },
-            {
-              "route": "deploy-to-vercel",
-              "display": "Deploy to Vercel"
-            }
-          ]
-        },
-        {
-          "display": "PHP",
-          "subpages": [
-            {
-              "route": "connect-laravel-app",
-              "display": "Laravel quickstart"
-            },
-            {
-              "route": "connect-symfony-app",
-              "display": "Symfony quickstart"
-            },
-            { "route": "connect-php-app", "display": "PHP quickstart" }
-          ]
-        },
-        {
-          "display": "Prisma",
-          "subpages": [
-            {
-              "route": "prisma-quickstart",
-              "display": "Prisma quickstart"
-            },
-            {
-              "route": "prisma-data-platform-integration",
-              "display": "Prisma Data Platform integration"
-            },
-            {
-              "route": "automatic-prisma-migrations",
-              "display": "Automatic Prisma migrations"
-            }
-          ]
-        },
-        {
-          "display": "Rails",
-          "subpages": [
-            {
-              "route": "connect-rails-app",
-              "display": "Rails quickstart"
-            },
-            {
-              "route": "automatic-rails-migrations",
-              "display": "Automatic Rails migrations"
-            }
-          ]
-        },
-        {
-          "display": "Deploy your app",
-          "subpages": [
-            { "route": "deploy-to-netlify", "display": "Deploy to Netlify"},
-            { "route": "deploy-to-vercel", "display": "Deploy to Vercel" },
-            {
-              "route": "nextjs-planetscale-netlify-template",
-              "display": "Next.js and Netlify Template"
-            },
-            {
-              "display": "Deploy a Django app to Heroku",
-              "route": "deploy-a-django-app-to-heroku"
-            }
-          ]
-        },
-        {
-          "display": "AWS",
-          "subpages": [
-            {
-              "route": "aws-lambda-connection-strings",
-              "display": "AWS Lambda connection strings"
-            }
-          ]
+          "route": "connect-nextjs-app",
+          "display": "Rust"
         },
         {
           "display": "Migration guides",
           "subpages": [
             {
               "route": "aws-rds-migration-guide",
-              "display": "AWS RDS"
+              "display": "Apache Cassandra"
             },
             {
-              "display": "GCP CloudSQL",
+              "display": "AWS DynamoDB",
               "route": "gcp-cloudsql-migration-guide"
-            },
-            {
-              "display": "DigitalOcean",
-              "route": "digitalocean-database-migration-guide"
-            },
-            {
-              "display": "Azure",
-              "route": "azure-database-for-mysql-migration-guide"
             }
           ]
         }
@@ -205,57 +108,27 @@
       "description": "Learn about the integrations that PlanetScale supports.",
       "image": "/docs/img/internals/category_reference_light.png",
       "pages": [
+        { "route": "spark", "display": "Spark" },
+        { "route": "kafka", "display": "Kafka" },
+        { "route": "pulsar", "display": "Pulsar" },
         { "route": "datadog", "display": "Datadog" },
-        { "route": "airbyte", "display": "Airbyte" },
-        { "route": "stitch", "display": "Stitch" }
+        { "route": "akka", "display": "Akka" },
+        { "route": "presto", "display": "Presto" },
+        { "route": "parquet", "display": "Parquet" }
       ]
     },
     {
-      "id": "learn",
-      "name": "Learn",
-      "description": "Learn how to set up your PlanetScale development environment, CLI, and more!",
+      "id": "on-premise",
+      "name": "On-Premise",
+      "description": "Learn how to run ScyllaDB locally.",
       "image": "/docs/img/internals/category_reference_light.png",
       "pages": [
-        {
-          "display": "Foreign key constraints",
-          "subpages": [
-            {
-              "route": "operating-without-foreign-key-constraints",
-              "display": "Operating without FK constraints"
-            }
-          ]
-        },
-        {
-          "display": "Schema changes",
-          "subpages": [
-            {
-              "route": "how-online-schema-change-tools-work",
-              "display": "How Online Schema Change tools work"
-            },
-            {
-              "route": "online-schema-change-tools-comparison",
-              "display": "Comparison of Online Schema Change tools"
-            }
-          ]
-        },
-        {
-          "display": "Single unique key",
-          "subpages": [
-            {
-              "route": "change-single-unique-key",
-              "display": "Change single unique key"
-            }
-          ]
-        },
-        {
-          "display": "Table and column renames",
-          "subpages": [
-            {
-              "route": "handling-table-and-column-renames",
-              "display": "Handling table and column renames"
-            }
-          ]
-        }
+        { "route": "requirements", "display": "Requirements" },
+        { "route": "install", "display": "Install" },
+        { "route": "kafka", "display": "Configure" },
+        { "route": "deploy", "display": "Deploy" },
+        { "route": "operate", "display": "Operate" },
+        { "route": "manage", "display": "Manage" }
       ]
     },
     {
@@ -264,27 +137,17 @@
       "description": "Learn how to set up your PlanetScale development environment, CLI, and more!",
       "image": "/docs/img/internals/category_reference_light.png",
       "pages": [
-        { "route": "mysql-compatibility", "display": "MySQL compatibility" },
-        { "route": "import-tool-migration-addresses", "display": "Import tool public IP addresses" },
+        { "route": "compatibility", "display": "Compatibility" },
+        { "route": "cql", "display": "CQL" },
         { "route": "import-tool-user-requirements", "display": "Import tool user permissions" },
         { "route": "planetscale-cli", "display": "PlanetScale CLI overview" },
         {
-          "display": "CLI command reference",
+          "display": "Drivers",
           "subpages": [
-            { "route": "audit-log", "display": "audit-log" },
-            { "route": "auth", "display": "auth" },
-            { "route": "backup", "display": "backup" },
-            { "route": "branch", "display": "branch" },
-            { "route": "completion", "display": "completion" },
-            { "route": "connect", "display": "connect" },
-            { "route": "database", "display": "database" },
-            { "route": "deploy-request", "display": "deploy-request" },
-            { "route": "org", "display": "org" },
-            { "route": "password", "display": "password" },
-            { "route": "region", "display": "region" },
-            { "route": "service-token", "display": "service-token" },
-            { "route": "shell", "display": "shell" },
-            { "route": "signup", "display": "signup" }
+            { "route": "python", "display": "Python" },
+            { "route": "java", "display": "Java" },
+            { "route": "rust", "display": "Rust" },
+            { "route": "nodejs", "display": "NodeJS" }
           ]
         }
       ]
@@ -297,7 +160,7 @@
       "pages": [
         {
           "route": "support-overview",
-          "display": "PlanetScale Support overview"
+          "display": "ScyllaDB Support overview"
         }
       ]
     }
